@@ -1,0 +1,18 @@
+$background-main : #f0f4f5;
+$headers : #333447;
+$words : #919191;
+
+#about-us
+{
+    background-color: $background-main;
+}
+
+#about-us h3
+{
+    color: $headers;
+}
+
+#about-us p
+{
+    color: $words;
+}
