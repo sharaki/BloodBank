@@ -1,0 +1,52 @@
+#donate
+{
+    background-image: url(../../assets/images/donate.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 300px;
+    margin-top: 50px;
+   text-align: center;
+   overflow: hidden;
+}
+.give
+{
+    float: left;
+}
+.recieve
+{
+    float: right;
+}
+.give p
+{
+    font-size: 15px;
+    font-weight: 700;
+    margin: auto;
+}
+.recieve p 
+{
+    font-size: 15px;
+    font-weight: 700;
+    margin: auto;
+}
+.give h5
+{
+    padding-top: 90px;
+}
+.recieve h5
+{
+    padding-top: 90px;
+}
+.btn
+{
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #aaa;
+    border: 0px;
+    
+}
+.find
+{
+    background-color: #fff;
+    color: black;
+}
