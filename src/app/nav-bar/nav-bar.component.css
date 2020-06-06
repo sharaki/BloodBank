@@ -1,0 +1,12 @@
+.mainNav {
+  background-color: #7f0001;
+  width: 100%;
+  z-index: 111;
+}
+
+nav ul li a:hover {
+  font-size: 20px;
+  color: brown;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=nav-bar.component.css.map */
