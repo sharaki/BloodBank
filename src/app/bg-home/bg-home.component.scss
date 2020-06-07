@@ -1,0 +1,70 @@
+/*first created bg and over lay then created animation that make scroll to about section*/
+#Home
+{
+  background-image: url(../../assets/images/home.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+#Home .HomeOverLay
+{
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+}
+#Home .HomeCaption
+{
+  height: 100%;
+}
+#Home .HomeCaption h1
+{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.5;
+}
+#Home .HomeCaption p{
+  font-style: italic;
+  font-size: 18px;
+  /************ for animation part ************/
+}
+#Home .HomeOverLay  .scrollAbout
+{
+  padding: 28px 15px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  animation: scrollToAbout 1.5s infinite;
+  -webkit-animation: scrollToAbout 1.5s infinite;
+
+}
+#Home .HomeOverLay .scrollAbout::after
+{
+ content:"";
+ position: absolute;
+ bottom: 40%;
+ left: 13px;
+ width: 5px;
+ height: 15px;
+ border-radius: 5px;
+ background-color: #fff;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+}
+@keyframes scrollToAbout
+{
+  0%{bottom: 70px;}
+  20%{bottom:60px;}
+  40%{bottom:40px ;}
+  60%{bottom: 55px;}
+  80%{bottom: 65px;}
+  100%{bottom:70px ;}
+}

@@ -10,6 +10,7 @@ import { MyServicesComponent } from './my-services/my-services.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { BgHomeComponent } from './bg-home/bg-home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     MyServicesComponent,
     FooterComponent,
     HomeComponent,
-    GalleryComponent
+    GalleryComponent,
+    BgHomeComponent
   ],
   imports: [
     BrowserModule,
