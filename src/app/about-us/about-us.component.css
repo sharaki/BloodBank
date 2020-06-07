@@ -2,8 +2,10 @@
   background-color: #f0f4f5;
 }
 
-#about-us h3 {
+#about-us h2 {
   color: #333447;
+  line-height: 1.25;
+  text-transform: uppercase;
 }
 
 #about-us p {

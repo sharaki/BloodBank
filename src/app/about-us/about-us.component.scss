@@ -9,9 +9,11 @@ $words : #919191;
     background-color: $background-main;
 }
 
-#about-us h3
+#about-us h2
 {
     color: $headers;
+    line-height: 1.25;
+    text-transform: uppercase;
 }
 
 #about-us p
