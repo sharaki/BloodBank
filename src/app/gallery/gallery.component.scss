@@ -11,10 +11,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: none;
-    transition: flex 0.8s ease;
+    transition: flex 0.8s ease !important;
     
     &:hover{
-      flex: 7;
+      flex: 7 !important;
     }
   }
   
