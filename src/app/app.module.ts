@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BgHomeComponent } from './bg-home/bg-home.component';
+import { LoginComponent } from './login/login.component';
+import { ReceiverSignupComponent } from './receiver-signup/receiver-signup.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,9 @@ import { BgHomeComponent } from './bg-home/bg-home.component';
     HomeComponent,
     GalleryComponent,
     BgHomeComponent
+    BgHomeComponent,
+    LoginComponent,
+    ReceiverSignupComponent
   ],
   imports: [
     BrowserModule,
