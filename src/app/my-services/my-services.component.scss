@@ -1,21 +1,31 @@
-#donate
+*
 {
-    background-image: url(../../assets/images/donate.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    width: 80%;
-    height: 300px;
-    margin-top: 50px;
-   text-align: center;
-   overflow: hidden;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .give
 {
+    background-image: url(../../assets/images/1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 300px;   
     float: left;
+    overflow: hidden;
+
 }
 .recieve
 {
+    background-image: url(../../assets/images/2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 300px;
     float: right;
+    overflow: hidden;
 }
 .give p
 {
@@ -43,6 +53,7 @@
     border-radius: 15px;
     box-shadow: 2px 2px 2px #aaa;
     border: 0px;
+    
     
 }
 .find

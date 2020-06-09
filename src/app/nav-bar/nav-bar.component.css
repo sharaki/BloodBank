@@ -1,11 +1,29 @@
 .mainNav {
+  background-color: #7f0001;
   width: 100%;
   z-index: 111;
+}
+
+nav .logo {
+  cursor: initial;
 }
 
 nav ul li a:hover {
   font-size: 20px;
   color: brown;
   text-transform: uppercase;
+}
+
+nav .dropdown-item {
+  cursor: pointer;
+}
+
+nav ul li .nav-link, nav .navbar-text {
+  color: white;
+}
+
+nav a img {
+  width: 30px;
+  height: 30px;
 }
 /*# sourceMappingURL=nav-bar.component.css.map */
