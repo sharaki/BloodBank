@@ -12,7 +12,11 @@ import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BgHomeComponent } from './bg-home/bg-home.component';
 import { LoginComponent } from './login/login.component';
+
+import { SignUpComponent } from './sign-up/sign-up.component';
 import { ReceiverSignupComponent } from './receiver-signup/receiver-signup.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,10 +28,12 @@ import { ReceiverSignupComponent } from './receiver-signup/receiver-signup.compo
     FooterComponent,
     HomeComponent,
     GalleryComponent,
-    BgHomeComponent
+
     BgHomeComponent,
     LoginComponent,
+    SignUpComponent
     ReceiverSignupComponent
+
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+#login
+{
+background-image: url(../../assets/images/bgLogin.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+
+}
+#login .LoginInp .w-75
+{
+  background-color: transparent;
+  border: solid 1px rgb(206,212,218);
+  color: white;
+
+}
+
+#login .LoginInp button
+{
+  text-transform: uppercase;
+}
+#login .LoginInp p
+{
+  cursor: pointer;
+}
+#login .loginIcon
+{
+  border:  2px white solid;
+}
