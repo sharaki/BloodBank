@@ -8,6 +8,14 @@ background-image: url(../../assets/images/bgLogin.jpg);
 #login .LoginInp .w-75
 {
   background-color: transparent;
+  border: solid 1px rgb(206,212,218);
+  color: white;
+
+}
+
+#login .LoginInp button
+{
+  text-transform: uppercase;
 }
 #login .LoginInp p
 {

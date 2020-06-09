@@ -6,6 +6,12 @@
 
 #login .LoginInp .w-75 {
   background-color: transparent;
+  border: solid 1px #ced4da;
+  color: white;
+}
+
+#login .LoginInp button {
+  text-transform: uppercase;
 }
 
 #login .LoginInp p {
