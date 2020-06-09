@@ -12,8 +12,15 @@ import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BgHomeComponent } from './bg-home/bg-home.component';
 import { LoginComponent } from './login/login.component';
+<<<<<<< HEAD
 import { ReceiverSignupComponent } from './receiver-signup/receiver-signup.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+=======
+
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { ReceiverSignupComponent } from './receiver-signup/receiver-signup.component';
+
+>>>>>>> 8c7b7c2669c36b8c8f854bd850d77d44d12eaa4a
 
 
 @NgModule({
