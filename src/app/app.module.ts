@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { BgHomeComponent } from './bg-home/bg-home.component';
+import { CampsComponent } from './camps/camps.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BgHomeComponent } from './bg-home/bg-home.component';
     FooterComponent,
     HomeComponent,
     GalleryComponent,
-    BgHomeComponent
+    BgHomeComponent,
+    CampsComponent
   ],
   imports: [
     BrowserModule,
