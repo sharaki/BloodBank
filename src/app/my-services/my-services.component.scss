@@ -12,7 +12,7 @@ body
     background-size: 100% 100%;
     background-repeat: no-repeat;
     text-align: center;
-    height: 300px;   
+    height: 300px;
     float: left;
     overflow: hidden;
 
@@ -33,7 +33,7 @@ body
     font-weight: 700;
     margin: auto;
 }
-.recieve p 
+.recieve p
 {
     font-size: 15px;
     font-weight: 700;
@@ -53,11 +53,38 @@ body
     border-radius: 15px;
     box-shadow: 2px 2px 2px #aaa;
     border: 0px;
-    
-    
+
+
 }
 .find
 {
     background-color: #fff;
     color: black;
+}
+/**************************modal part*******************************/
+.donner
+{
+  position: fixed;
+  display: none;
+
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+}
+.userRecieve
+{
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+}
+ i
+{
+  cursor: pointer;
+  color: red;
 }
