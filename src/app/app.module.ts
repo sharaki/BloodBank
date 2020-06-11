@@ -26,7 +26,6 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     HomeComponent,
     GalleryComponent,
     BgHomeComponent,
-    camps-page,
     CampsComponent,
     LoginComponent,
     ReceiverSignupComponent,
