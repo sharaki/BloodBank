@@ -10,15 +10,16 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ReceiverSignupComponent } from './receiver-signup/receiver-signup.component';
 import { CampsComponent } from './camps/camps.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MyServicesComponent } from './my-services/my-services.component';
 
 
 const routes: Routes = [
-  
+
   {path:"", redirectTo:'home', pathMatch:'full'},
   {path:"home", component:BgHomeComponent},
   {path:"about", component:AboutUsComponent},
   {path:"gallery", component:GalleryComponent},
-  {path:"contact-us", component:ContactUsComponent},
+  {path:"services", component:MyServicesComponent},
   {path:"sign-in", component:LoginComponent},
   {path:"sign-up", component:ReceiverSignupComponent},
   {path:"camps", component:CampsComponent},
