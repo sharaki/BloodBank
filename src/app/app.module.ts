@@ -14,6 +14,7 @@ import { CampsComponent } from './camps/camps.component';
 import { LoginComponent } from './login/login.component';
 import { ReceiverSignupComponent } from './receiver-signup/receiver-signup.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     CampsComponent,
     LoginComponent,
     ReceiverSignupComponent,
-    SignUpComponent
+    SignUpComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
