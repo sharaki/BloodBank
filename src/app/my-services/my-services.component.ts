@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+
+
 declare var $:any;
 
 @Component({
@@ -10,18 +14,27 @@ declare var $:any;
 
 export class MyServicesComponent implements OnInit {
 
-  constructor() { }
+  constructor( private _HttpClient:HttpClient ) {
+    this.fetchData();
+   }
+
+
+  fetchData()
+  {
+    return this._HttpClient.get('http://www.communitybenefitinsight.org/api/get_hospital_systems.php?state=NC').subscribe(response =>{
+      console.log(response)
+    })
+  }
 
   ngOnInit(): void {
     /********** to close modal donate****** */
     $("#closeDonner").click(function(){
       $(".donner").css("display","none")
-
     })
     /********** to open modal donate************ */
     $("#btnDonate").click(function(){
       $(".donner").css("display","block")
-
+      
     })
 
      /********** to open moda recieve****** */
