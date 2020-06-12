@@ -1,6 +1,8 @@
 $headingColor : #444;
 $headingSpace : .03em;
-
+$eventsBackground : white;
+$shadow : 1px 1px 10px rgba(0, 0, 0, 0.5);
+$shadowAnim : 1px 1px 20px rgba(0, 0, 0, 0.5); 
 
 .heading{
     letter-spacing: $headingSpace;
@@ -22,19 +24,6 @@ $headingSpace : .03em;
     font-weight: 200;
 }
 
-body:after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  opacity: 0.7;
-  background-image: url("https://unsplash.it/g/1920/1080?image=685&blur&gravity=center");
-  background-size: cover;
-}
-
 h1 {
   font-family: "Oswald";
   font-size: 50px;
@@ -43,125 +32,21 @@ h1 {
   letter-spacing: 5px;
   text-transform: uppercase;
 }
-
-#backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  z-index: 3;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-}
-
-.add-event-section {
-  position: fixed;
-  right: 50px;
-  bottom: 120px;
-}
-.add-event-section a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.9);
-  display: block;
-  visibility: hidden;
-  opacity: 0;
-  margin: 0;
-  text-align: right;
-  background-color: white;
-  padding: 5px 15px 5px 30px;
-  border-radius: 20px;
-  position: relative;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  font-size: 17px;
-  z-index: 4;
-}
-.add-event-section a:hover {
-  background-color: rgba(150, 210, 255, 0.9);
-}
-.add-event-section a:before {
-  font-family: "FontAwesome";
-  position: absolute;
-  left: 10px;
-  top: 9px;
-}
-.add-event-section #upload:before {
-  content: "";
-}
-.add-event-section #add:before {
-  content: "";
-}
-.add-event-section input[type="checkbox"] {
-  display: none;
-}
-.add-event-section input[type="checkbox"]:checked ~ .floating-action-button {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.add-event-section input[type="checkbox"]:checked ~ .floating-action-button:hover {
-  -webkit-transform: rotate(45deg) scale(1.05);
-          transform: rotate(45deg) scale(1.05);
-}
-.add-event-section input[type="checkbox"]:checked ~ a {
-  visibility: visible;
-  opacity: 1;
-  margin: 25px 0;
-}
-.add-event-section input[type="checkbox"]:checked ~ #backdrop {
-  opacity: 0.65;
-  visibility: visible;
-}
-.add-event-section .floating-action-button {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  display: block;
-  width: 70px;
-  z-index: 100;
-  height: 70px;
-  border-radius: 50%;
-  background-color: #146eff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  line-height: 70px;
-  text-align: center;
-  font-size: 30px;
-  color: rgba(255, 255, 255, 0.9);
-  cursor: pointer;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
-}
-.add-event-section .floating-action-button:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-}
-.add-event-section .floating-action-button i {
-  -webkit-transition: -webkit-transform 100ms linear;
-  transition: -webkit-transform 100ms linear;
-  transition: transform 100ms linear;
-  transition: transform 100ms linear, -webkit-transform 100ms linear;
-}
-
 .events {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 20px 0 50px;
 }
 .events .event-card {
   display: inline-block;
-  background: white;
+  background: $eventsBackground;
   width: 450px;
   margin: 20px;
   cursor: default;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: $shadow;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
   border-radius: 6px;
@@ -170,7 +55,7 @@ h1 {
 .events .event-card:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: $shadowAnim;
 }
 .events .event-card img {
   width: 100%;
@@ -207,8 +92,170 @@ h1 {
 }
 .events .event-card .description .location:before {
   font-family: "FontAwesome";
-  content: "";
+  content: "";
   display: inline-block;
   height: 18px;
   margin-right: 8px;
+}
+
+#stack1{
+  min-height: 70vh;
+}
+.card1 {
+  left:50%;
+  margin-left:-13em;
+  z-index:10;
+  transform: rotateZ(-3deg);
+  -moz-transform: rotateZ(-3deg);
+  -webkit-transform: rotateZ(-3deg);
+  transition: all 0.5s ease-out 0.3s;
+}
+.card2 {
+  left:50%;
+  margin-left:-12em;
+  z-index:9;
+  transition: all 0.5s ease-out 0.15s;
+}
+.card3 {
+  left:50%;
+  margin-left:-11em;
+  z-index:8;
+  transform: rotateZ(3deg);
+  -webkit-transform: rotateZ(3deg); 
+  -moz-transform: rotateZ(3deg); 
+  transition: all 0.5s ease-out;
+}
+
+.start .card {
+  left:-100%;
+  opacity:0;
+  transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  -moz-transform: rotateZ(0deg);
+}
+
+.card-container {
+  position:relative;
+  width: 18em;
+  margin:4em auto;
+}
+
+.card {
+  position:absolute;
+  top:0;
+  background: #fff;
+  box-shadow: 1px 1px 7px rgba(0,0,0,.65);
+  border-radius:0em;
+  padding:2em;
+  width:20em;
+  max-width:20em;
+  -webkit-backface-visibility: hidden;
+}
+
+.card a {
+  margin:0em -2em;
+  display:block;
+  width:120%;
+  max-width:24em;
+  position:relative;
+  line-height:1em;
+}
+
+.card a:after {
+  content: "";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0px;
+  bottom:1px;
+  border-bottom:1px solid rgba(0,0,0,0.35);
+  border-top:1px solid rgba(0,0,0,0.15);
+}
+
+.card h1 {
+  margin-top:0;
+}
+
+.card p {
+  line-height:1.75em;
+  margin-bottom:0;
+}
+
+.card-container:hover,
+.card-container.hover {
+  .card {
+      opacity:0.9;
+      transform: scale(0.95);
+       -webkit-transform: scale(0.95);
+      margin-left:-12em;
+      &:hover,
+      &.hover {
+          opacity:1;   
+          z-index:11;
+              transform: scale(1);
+       -webkit-transform: scale(1);
+      }
+  }
+  .card1 {
+      transform: rotateZ(0deg) scale(0.95);
+      -webkit-transform: rotateZ(0deg) scale(0.95);
+  }
+  .card2 {
+      left:0%;  
+  }
+  .card3 {
+       left:100%;
+  }
+  
+}
+
+img { max-width:100% }
+
+@media (min-width:880px) {
+  body{
+      font-size:0.9em;
+  }
+  .card-container {
+      width: 24em;
+  }
+}
+
+@media (min-width:1075px) {
+  body{
+      font-size:1.1em;
+  }
+  .card-container {
+      width: 38em;
+  }
+}
+
+@media (max-height:550px) {
+  body{
+      font-size:0.8em;
+  }
+  .card-container {
+      width: 24em;
+  }
+}
+
+
+
+.campBanner{
+  background-image: url('./../../assets/images/cta_red_bg.png');
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+}
+.btnVolunter{
+  background: #ffffff !important;
+  color: #fe3c47 !important;
+  border: 2px solid #fe3c47 !important;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.btnVolunter:hover{
+  color: white !important;
+  background:  #fe3c47 !important;
+  border: 2px solid #fff !important;
 }
