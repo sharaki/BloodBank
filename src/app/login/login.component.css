@@ -4,7 +4,7 @@
   background-size: 100% 100%;
 }
 
-#login .LoginInp .w-75 {
+#login .LoginInp .w-100 {
   background-color: transparent;
   border: solid 1px #ced4da;
   color: white;
@@ -12,6 +12,12 @@
 
 #login .LoginInp button {
   text-transform: uppercase;
+}
+
+#login .LoginInp button:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
 }
 
 #login .LoginInp p {

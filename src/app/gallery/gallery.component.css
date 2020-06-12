@@ -18,16 +18,16 @@
   background-position: center;
   background-size: cover;
   background-repeat: none;
-  -webkit-transition: -webkit-box-flex 0.8s ease;
-  transition: -webkit-box-flex 0.8s ease;
-  transition: flex 0.8s ease;
-  transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
+  -webkit-transition: -webkit-box-flex 0.8s ease !important;
+  transition: -webkit-box-flex 0.8s ease !important;
+  transition: flex 0.8s ease !important;
+  transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease !important;
 }
 
 .item:hover {
-  -webkit-box-flex: 7;
-      -ms-flex: 7;
-          flex: 7;
+  -webkit-box-flex: 7 !important;
+      -ms-flex: 7 !important;
+          flex: 7 !important;
 }
 
 .item-1 {
