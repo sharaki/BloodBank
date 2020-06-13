@@ -34,8 +34,58 @@ export class CampsComponent implements OnInit {
           $(this).addClass('hover');
       });
     });
-
+    function closeForm() {
+      $('.form-popup-bg').removeClass('is-visible');
+    }
     
+    $(document).ready(function($) {
       
+      /* Contact Form Interactions */
+      $('#btnOpenForm1').on('click', function(event) {
+        event.preventDefault();
+    
+        $('.form-popup-bg1').addClass('is-visible');
+      });
+      
+        //close popup when clicking x or off popup
+      $('.form-popup-bg1').on('click', function(event) {
+        if ($(event.target).is('.form-popup-bg1') || $(event.target).is('#btnCloseForm')) {
+          event.preventDefault();
+          $(this).removeClass('is-visible');
+        }
+      });
+      /* Contact Form Interactions */
+      $('#btnOpenForm2').on('click', function(event) {
+        event.preventDefault();
+    
+        $('.form-popup-bg2').addClass('is-visible');
+      });
+      
+        //close popup when clicking x or off popup
+      $('.form-popup-bg2').on('click', function(event) {
+        if ($(event.target).is('.form-popup-bg2') || $(event.target).is('#btnCloseForm')) {
+          event.preventDefault();
+          $(this).removeClass('is-visible');
+        }
+      });
+      /* Contact Form Interactions */
+      $('#btnOpenForm3').on('click', function(event) {
+        event.preventDefault();
+    
+        $('.form-popup-bg3').addClass('is-visible');
+      });
+      
+        //close popup when clicking x or off popup
+      $('.form-popup-bg3').on('click', function(event) {
+        if ($(event.target).is('.form-popup-bg3') || $(event.target).is('#btnCloseForm')) {
+          event.preventDefault();
+          $(this).removeClass('is-visible');
+        }
+      });
+      
+      
+      
+      });
+    
   }
 }

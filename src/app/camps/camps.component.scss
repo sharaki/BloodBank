@@ -3,6 +3,7 @@ $headingSpace : .03em;
 $eventsBackground : white;
 $shadow : 1px 1px 10px rgba(0, 0, 0, 0.5);
 $shadowAnim : 1px 1px 20px rgba(0, 0, 0, 0.5); 
+$mainColor: #fe3c47;
 
 .heading{
     letter-spacing: $headingSpace;
@@ -99,7 +100,7 @@ h1 {
 }
 
 #stack1{
-  min-height: 70vh;
+  min-height: 100vh;
 }
 .card1 {
   left:50%;
@@ -259,3 +260,77 @@ img { max-width:100% }
   background:  #fe3c47 !important;
   border: 2px solid #fff !important;
 }
+.imgEvent{
+  width:40%;
+  background-image: cover;
+}
+
+
+/* form */
+
+
+.form-popup-bg1 ,  .form-popup-bg2 , .form-popup-bg3 {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.form-popup-bg1 ,  .form-popup-bg2 , .form-popup-bg3 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: $mainColor;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  overflow-y: auto;
+  z-index: 10000;
+}
+.form-popup-bg1.is-visible ,  .form-popup-bg2.is-visible , .form-popup-bg3.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.form-container {
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+  padding: 40px;
+  color: #fff;
+}
+.close-button {
+  color: #fe3c47;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid 1px #fff;
+}
+.form-popup-bg1:before ,  .form-popup-bg2:before , .form-popup-bg3:before{
+  content:'';
+  background-color: #fff;
+  opacity: .25;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
