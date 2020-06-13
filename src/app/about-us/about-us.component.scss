@@ -2,21 +2,161 @@ $background-main : #f0f4f5;
 $headers : #333447;
 $words : #919191;
 
+/*
 
-
-#about-us
+#About
 {
     background-color: $background-main;
 }
 
-#about-us h2
+#About h2
 {
     color: $headers;
     line-height: 1.25;
     text-transform: uppercase;
 }
 
-#about-us p
+#About p
 {
     color: $words;
 }
+/***********for hover in image ***********/
+/*
+#About .aboutImg
+{
+  position: relative;
+  cursor: pointer;
+  transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
+}
+#About .overLayAbout
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background-color: #eee;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  opacity: 0;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+#About .overLayAbout .overLayDesc
+{
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
+}
+.aboutImg:hover .overLayAbout
+{
+  opacity: 1;
+}
+*/
+
+#About .aboutImg img
+{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#About .aboutImg
+{
+  cursor: pointer;
+  position: relative;
+}
+#About .aboutImg:hover  .overLayAbout
+{
+  opacity: 1;
+}
+#About h6
+{
+  font-weight: 600;
+  font-size: 23px;
+}
+
+#About p
+{
+  font-size: 18px;
+  line-height: 1.55;
+}
+#About .overLayAbout p
+{
+  font-style: italic;
+}
+
+#About .aboutImg .overLayAbout
+{
+  position: absolute;
+  transition: 1s all ease;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  -ms-transition: 1s all ease;
+  -o-transition: 1s all ease;
+}
+#About .aboutImg .overLayAbout .overLayDesc
+{
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  color: white;
+}
+
+#About span{
+
+  line-height: 1.5;
+  color: red;
+  font-size: 20px;
+  font-weight: 500;
+}
+.contactUs p
+{
+  font-weight: 400;
+  font-style: italic;
+}
+.contactUs i:hover
+{
+  color: white;
+  background-color: red;
+  border: 1px solid red;
+}
+.contactUs i
+{
+  cursor: pointer;
+  border: 1px solid gray;
+  font-size: 24px;
+  color: black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+
+
