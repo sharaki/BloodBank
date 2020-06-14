@@ -16,7 +16,6 @@ body
     height: 300px;
     float: left;
     overflow: hidden;
-    
 }
 .recieve
 {
@@ -27,6 +26,7 @@ body
     height: 300px;
     float: right;
     overflow: hidden;
+    
 }
 .give p
 {
@@ -67,12 +67,13 @@ body
 {
   position: fixed;
   display: none;
-
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.9);
+  padding-top: 40px;
+  overflow: scroll;
 }
 .userRecieve
 {
@@ -83,6 +84,8 @@ body
   left: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0.9);
+  padding-top: 40px;
+  overflow: scroll;
 }
  i
 {
