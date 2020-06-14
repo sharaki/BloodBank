@@ -1,6 +1,6 @@
 .mainNav {
   background-color: #7f0001;
-  width: 100%;
+  color: white;
 }
 
 nav .logo {
@@ -8,9 +8,7 @@ nav .logo {
 }
 
 nav ul li a:hover {
-  font-size: 20px;
   color: brown;
-  text-transform: uppercase;
 }
 
 nav .dropdown-item {
