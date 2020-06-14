@@ -1,19 +1,20 @@
 /*first created bg and over lay then created animation that make scroll to about section*/
+
+
 #Home
 {
   background-image: url(../../assets/images/home.jpg);
-  height: 100vh;
   background-position: center center;
   background-size: 100% 100%;
 }
 #Home .HomeOverLay
 {
   background-color: rgba(0,0,0,0.5);
-  height: 100%;
+  height: 100vh;
 }
 #Home .HomeCaption
 {
-  height: 100%;
+  height: 100vh;
 }
 #Home .HomeCaption h1
 {
@@ -22,7 +23,7 @@
   font-size: 60px;
   line-height: 1.5;
 }
-#Home .HomeCaption p{
+#Home .HomeCaption span{
   font-style: italic;
   font-size: 18px;
   /************ for animation part ************/
