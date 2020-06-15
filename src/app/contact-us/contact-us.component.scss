@@ -1,4 +1,5 @@
-
+$headingColor : #444;
+$headingSpace : .03em;
 
 #contact-us
 {
@@ -8,5 +9,25 @@
 
 #contact-us h3
 {
-    color: white;
+    color: #333447;
+}
+
+.heading{
+    letter-spacing: $headingSpace;
+    color: $headingColor;
+    margin: 0;
+    padding: 0;
+}
+.section-heading {
+    @extend .heading;
+    position: relative;
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.section-subheading {
+    @extend .heading;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 200;
 }

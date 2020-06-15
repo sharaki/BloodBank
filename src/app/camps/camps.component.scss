@@ -150,7 +150,6 @@ h1 {
   padding:2em;
   width:20em;
   max-width:20em;
-  -webkit-backface-visibility: hidden;
 }
 
 .card a {
@@ -331,6 +330,96 @@ img { max-width:100% }
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+
+
+/* bx-wrapper Styling */
+.bx-wrapper {
+  box-shadow: none !important;
+  border: none !important;
+  background: #fff !important;
+  margin: auto !important;
+  
+}
+
+.bx-wrapper .bx-caption {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  background: rgba(80, 80, 80, 0.5) !important;
+  width: 100% !important;
+  
+}
+
+.bx-wrapper .bx-caption span {
+  color: #fff !important;
+  font-family: Arial !important;
+  display: block !important;
+  font-size: 8px !important;
+  padding: 10px !important;
+  
+  text-align: center;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 9999;
+  
+}
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background-image: url(../../assets/images/1.png) no-repeat 0 -32px;
+}
+
+.bx-wrapper .bx-next {
+  right: 10px;
+  background-image: url(../../assets/images/1.png) no-repeat -43px -32px;
+} 
+/* End bx-wrapper Styling */
+
+.logosImgs {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.logosImgs img {
+  max-height: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: .65;
+  transition: all .5s;
+}
+
+.logosImgs img:hover {
+	opacity: 1;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+
+@media screen and (max-width: 800px) {
+    .logosImgs img {
+      max-width: 125px;
+      max-height: 88px;
+      margin: 5px 8px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .logosImgs img {
+      max-width: 85px;
+      max-height: 60px;
+      margin: 3px 5px;
+  }
 }
 
 
