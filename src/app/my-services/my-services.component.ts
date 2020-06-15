@@ -13,19 +13,40 @@ declare var $:any;
 
 
 export class MyServicesComponent implements OnInit {
-
-  constructor( private _HttpClient:HttpClient ) {
-    this.fetchData();
-   }
-
-
-  fetchData()
-  {
-    return this._HttpClient.get('http://www.communitybenefitinsight.org/api/get_hospital_systems.php?state=NC').subscribe(response =>{
-      console.log(response)
+  
+  constructor( ) {
+    let httpReq = new XMLHttpRequest();
+    let results=[];
+    httpReq.open('GET','https://jsonplaceholder.typicode.com/posts/1/comments')
+    httpReq.send();
+    httpReq.addEventListener('readystatechange', function(){
+      if(httpReq.readyState == 4 && httpReq.status == 200)
+      {
+         results = JSON.parse(httpReq.response);
+        
+      }
+      displayData();
     })
+    function displayData()
+    {
+      let temp = ``;
+      for(let i=0 ; i<results.length ; i++)
+      {
+        temp += `<div class="card col-md-3 " style="width: 16rem;  color: black;">
+        
+        <div class="card-body">
+          <h5 class="card-title">`+results[i].name+`</h5>
+          <p class="card-text">`+results[i].email+`</p>
+          <p class="card-text">`+results[i].body+`</p>
+          <p class="card-text">`+results[i].zip_code+`</p>
+          <p class="card-text">`+results[i].updated_dt+`</p>
+        </div>
+      </div>`
+      }
+      document.getElementById("test").innerHTML=temp;
+      document.getElementById("tests").innerHTML=temp;
+    }
   }
-
   ngOnInit(): void {
     /********** to close modal donate****** */
     $("#closeDonner").click(function(){

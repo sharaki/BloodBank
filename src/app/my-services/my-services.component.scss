@@ -5,27 +5,28 @@
 body
 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 .give
 {
     background-image: url(../../assets/images/1.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    text-align: center;
     height: 300px;
+    width: 500px;
     float: left;
     overflow: hidden;
-
 }
 .recieve
 {
     background-image: url(../../assets/images/2.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    text-align: center;
     height: 300px;
+    width: 500px;
     float: right;
     overflow: hidden;
+    
 }
 .give p
 {
@@ -39,22 +40,36 @@ body
     font-weight: 700;
     margin: auto;
 }
-.give h5
+.give p , .recieve p
+{
+    font-size: 17px;
+    font-weight: 400;
+   font-style: italic;
+}
+
+.give h5 , .recieve h5
 {
     padding-top: 90px;
 }
-.recieve h5
-{
-    padding-top: 90px;
-}
+
 .btn
 {
-    margin-top: 50px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 2px #aaa;
+     border-radius: 15px;
+     width: 150px;
+     height: 45px;
+     box-shadow: 5px 2px 5px 2px #aaa;
     border: 0px;
 
-
+}
+.find:hover
+{
+  background-color:rgb(252,87,94);
+  color: white;
+}
+.donateBTN:hover
+{
+  background-color: white;
+  color: black;
 }
 .find
 {
@@ -64,27 +79,101 @@ body
 /**************************modal part*******************************/
 .donner
 {
-  position: fixed;
+  position: absolute;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(../../assets/images/city.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
   display: none;
-
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
+}
+.overLayDR
+{
+  background-color: rgba(0,0,0,0.7);
 }
 .userRecieve
 {
-  position: fixed;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(../../assets/images/city.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  position: absolute;
   display: none;
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.9);
+  bottom: auto;
+  //background-color: rgba(0,0,0,0.9);
 }
- i
+
+ input{
+  box-shadow: 0 5px 13px 0 rgba(0,0,0,0.1);
+}
+/*showDeialsDonaite*/
+ .userRecieve .show .hospitalReciver img , .donner .showDonate .hospitalDonation img {
+  height: 100px !important;
+  width: 100px !important;
+}
+.donner .showDonate .hospitalDonation span , .userRecieve .show .hospitalReciver span
+{
+  color: red;
+  cursor: pointer;
+}
+.donner #closeDonner
 {
   cursor: pointer;
-  color: red;
+  position: absolute;
+  right: 2%;
+  top: 5%;
 }
+.userRecieve #closeRecieve
+{
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 5%;
+
+}
+
+
+.userRecieve .show img , .donner .showDonate .showDeialsDonation img
+{
+  width: 700px !important;
+  height: 300px !important;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+ .userRecieve   i{
+  cursor: pointer;
+}
+
+.contanctHospital  i
+{
+  font-size: 25px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  padding: 8px;
+  color: red;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.contanctHospital  i:hover
+{
+  background-color: red;
+  color: white;
+  border: none;
+}
+.contanctHospital .contactSpan
+{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
