@@ -3,10 +3,19 @@
 #contact-us
 {
    background-image: url(../../assets/images/map-image.png);
-   background-color: black;
+   background-color: #7e1319   ;
 }
 
 #contact-us h3
 {
     color: white;
+}
+.btn
+{
+    width: 100px;
+    // box-shadow: 5px 5px 3px #dddddd;
+}
+.form-control
+{
+    background-color: transparent !important;
 }
