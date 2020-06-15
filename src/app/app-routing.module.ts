@@ -23,9 +23,8 @@ const routes: Routes = [
   {path:"sign-in", component:LoginComponent},
   {path:"sign-up", component:ReceiverSignupComponent},
   {path:"camps", component:CampsComponent},
-  {path:"**", component:NotFoundComponent},
-
-
+  {path:"**", component:NotFoundComponent}
+  
 
 
 ];
