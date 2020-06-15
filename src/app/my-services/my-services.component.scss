@@ -1,11 +1,15 @@
-*
+.spanHead
 {
-    box-sizing: border-box;
+  color: red;
+
 }
-body
+h2
 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+  line-height: 1.5;
+}
+.spanH
+{
+  font-weight: 600;
 }
 .give
 {
@@ -26,7 +30,7 @@ body
     width: 500px;
     float: right;
     overflow: hidden;
-    
+
 }
 .give p
 {
@@ -91,7 +95,7 @@ body
 }
 .overLayDR
 {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.4);
 }
 .userRecieve
 {
