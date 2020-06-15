@@ -17,15 +17,17 @@ input , select
 select option{
   color: black;
 }
+//rgb(95,14,19)
 button
 {
   width: 150px;
   background-color: transparent;
-  border: 1px solid gray;
+
 
 }
 button:hover
 {
+
   background-color: red;
   color: white;
   border: none;

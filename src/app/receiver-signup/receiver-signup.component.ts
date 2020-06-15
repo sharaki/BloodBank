@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormGroup, FormControl, Validators } from '@angular/forms'
 
 @Component({
   selector: 'app-receiver-signup',
@@ -8,15 +9,38 @@ import { Component, OnInit } from '@angular/core';
 export class ReceiverSignupComponent implements OnInit {
 
   constructor() { }
+  //[Validators.required , Validators.pattern(/^([a-zA-Z]+[..]?[]?[a-z]+['-]?)+$/)]
+
+  // [Validators.required , Validators.pattern(/^(002)?(010 | 0100 | 012 | 015)[0-9]{8}$/
+
+  signUp = new FormGroup({
+    full_name : new FormControl('', [  Validators.required , Validators.pattern(/^([a-zA-Z]+[..]?[]?[a-z]+['-]?)+$/)]),
+    email : new FormControl('' , [Validators.required , Validators.email]),
+
+    password: new FormControl('', Validators.required),
+    age: new FormControl('' , Validators.required),
+    mobile: new FormControl('' , Validators.required),
+    confirm_pass : new FormControl('' , Validators.required),
+    Blood_type : new FormControl ('' , Validators.required)
+
+
+  });
+
+
+  FormSignUp()
+  {
+    console.log(this.signUp);
+  }
+
 
   ngOnInit(): void {
   }
 
 
 
-  
 
-  
+
+
 }
 
 
@@ -34,10 +58,10 @@ export class ReceiverSignupComponent implements OnInit {
 // 			.removeClass('has-error')
 // 		}
 // 	});
-	
+
 // 	$.validate({
 // 		rules:
-// 		{	
+// 		{
 // 		    password: "required",
 // 			birthDate: "required",
 // 			weight: {
@@ -53,7 +77,7 @@ export class ReceiverSignupComponent implements OnInit {
 // 				email: true
 // 			}
 // 		},
-// 			messages:{			
+// 			messages:{
 // 				email: {
 // 				required: true,
 // 				email: true
@@ -78,6 +102,6 @@ export class ReceiverSignupComponent implements OnInit {
 // 					number: " Only numbers allowed"
 // 				},
 // 			}
-			
+
 // 	});
 // });

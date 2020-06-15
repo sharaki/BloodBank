@@ -9,7 +9,7 @@ body {
 
 .give {
   background-image: url(../../assets/images/1.png);
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   height: 300px;
@@ -19,7 +19,7 @@ body {
 
 .recieve {
   background-image: url(../../assets/images/2.png);
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   height: 300px;
