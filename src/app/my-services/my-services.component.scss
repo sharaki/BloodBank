@@ -1,21 +1,43 @@
-
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
 .give
 {
     background-image: url(../../assets/images/1.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
-
-
-
+    float: left;
+    overflow: hidden;
 }
 .recieve
 {
     background-image: url(../../assets/images/2.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
 
+    float: right;
+    overflow: hidden;
+    
+}
+.give p
+{
+    font-size: 15px;
+    font-weight: 700;
+    margin: auto;
+}
+.recieve p
+{
+    font-size: 15px;
+    font-weight: 700;
+    margin: auto;
 }
 .give p , .recieve p
 {
@@ -65,12 +87,10 @@
   top: 0;
   right: 0;
   left: 0;
-
 }
 .overLayDR
 {
   background-color: rgba(0,0,0,0.7);
-
 }
 .userRecieve
 {
@@ -154,4 +174,5 @@
   font-size: 20px;
   font-weight: 500;
 }
+
 
