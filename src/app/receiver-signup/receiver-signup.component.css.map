@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EAEb,UAAU,EAAE,+CAA+C,CAAC,KAAK;EAClE,eAAe,EAAE,KAAK;CACxB;;AACD,AAAA,cAAc,CACd;EACI,gBAAgB,EAAE,OAAO;EACzB,SAAS,EAAE,KAAK;CACnB",
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EAEb,UAAU,EAAE,+CAA+C,CAAC,KAAK;EAElE,eAAe,EAAE,KAAK;CACxB;;AACD,AAAA,cAAc,CACd;EACI,gBAAgB,EAAE,OAAO;EACzB,SAAS,EAAE,KAAK;CACnB",
     "sources": [
         "receiver-signup.component.scss"
     ],
