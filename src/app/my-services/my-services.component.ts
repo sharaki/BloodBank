@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import Typed from 'typed.js';
 
 
 
@@ -49,6 +50,7 @@ export class MyServicesComponent implements OnInit {
     }
   }
   ngOnInit(): void {
+    
     /********** to close modal donate****** */
     $("#closeDonner").click(function(){
       $(".donner").css("display","none")
@@ -74,11 +76,21 @@ export class MyServicesComponent implements OnInit {
     })
 
 
+
+
+    var typed6 = new Typed('#typed6', {
+      strings: ['We believe that as more people talk about donating blood and blood transfusions^1000\n `more people will be inspired to give blood` ^1000\n `volunteer or donate financially to help fulfill our mission\n\n`When asked why they have not donated^1000\n `many people say it is because they were never asked to donate` ^1000\n `Let’s make that reason an excuse of the past, shall we?`'],
+      typeSpeed: 40,
+      backSpeed: 0,
+      loop: true
+    });
+
+ 
+
   }
 
+
 }
-
-
 
 
 // constructor( private _HttpClient:HttpClient ) {
@@ -92,3 +104,4 @@ export class MyServicesComponent implements OnInit {
 //     console.log(response)
 //   })
 // }
+
