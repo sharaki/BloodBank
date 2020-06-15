@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-declare var $:any;
 
 @Component({
   selector: 'app-gallery',
@@ -11,9 +10,6 @@ export class GalleryComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
-    
-    
   }
 
 }
