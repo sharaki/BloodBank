@@ -14,6 +14,7 @@ declare var $:any;
 
 export class MyServicesComponent implements OnInit {
   
+  
   constructor( ) {
     let httpReq = new XMLHttpRequest();
     let results=[];
@@ -76,3 +77,18 @@ export class MyServicesComponent implements OnInit {
   }
 
 }
+
+
+
+
+// constructor( private _HttpClient:HttpClient ) {
+//   this.fetchData();
+//  }
+
+
+// fetchData()
+// {
+//   return this._HttpClient.get('http://www.communitybenefitinsight.org/api/get_hospital_systems.php?state=NC').subscribe(response =>{
+//     console.log(response)
+//   })
+// }
