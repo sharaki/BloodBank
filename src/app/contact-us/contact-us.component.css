@@ -1,8 +1,17 @@
 #contact-us {
-  background-color: #f0f4f5;
+  background-image: url(../../assets/images/map-image.png);
+  background-color: #7e1319;
 }
 
 #contact-us h3 {
-  color: #333447;
+  color: white;
+}
+
+.btn {
+  width: 100px;
+}
+
+.form-control {
+  background-color: transparent !important;
 }
 /*# sourceMappingURL=contact-us.component.css.map */
