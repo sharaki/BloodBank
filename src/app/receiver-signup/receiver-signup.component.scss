@@ -1,10 +1,33 @@
-#receiver-signup {
-    // background: url('https://static-communitytable.parade.com/wp-content/uploads/2014/03/rethink-target-heart-rate-number-ftr.jpg') fixed;
-    background: url('../../assets/images/sign-up-receiver.jpg') fixed;
-   background-size: cover;
+#receiver
+{
+    background: url('../../assets/images/bgLogin.jpg') ;
+    background-attachment: fixed;
+   background-size: 100% 100%;
 }
 .form-receiver
 {
-    background-color: #f2f2f2;
+
     max-width: 700px;
+}
+input , select
+{
+  background-color: transparent !important;
+}
+
+select option{
+  color: black;
+}
+button
+{
+  width: 150px;
+  background-color: transparent;
+  border: 1px solid gray;
+
+}
+button:hover
+{
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 20px;
 }
