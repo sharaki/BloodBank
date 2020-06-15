@@ -10,16 +10,24 @@
       </div>
     </div>
     <div class="col-md-6">
-      <div class="LoginInp form mt-5"><!--(click)='onClickInp()'-->
+      <form [formGroup]="signIn" (ngSubmit)="signIn.valid && FormSignIn()">
+        <div class="LoginInp form mt-5"><!--(click)='onClickInp()'-->
 
-        <input type="email" class="w-100 form-control mb-4 ml-5"  placeholder="enter your Email..">
+          <input type="email"[class.is-valid]="signIn.controls.email.status=='VALID'" formControlName="email" class="w-100 form-control mb-4 ml-5"  placeholder="enter your Email..">
+          <div *ngIf="signIn.controls.email.errors && signIn.controls.email.touched" class="alert alert-danger ml-5 mt-3 "role="alert">
 
-        <input type="password" class="w-100 form-control ml-5 mb-4" placeholder="enter your password">
+            make sure your email is true
+           </div>
+          <input type="password" [class.is-valid]="signIn.controls.password.status=='VALID'" formControlName="password" class="w-100 form-control ml-5 mb-4" placeholder="enter your password">
+          <div *ngIf="signIn.controls.password.errors && signIn.controls.password.touched" class="alert alert-danger  ml-5 w-100 mt-3"role="alert">
 
-        <button class="btn btn-danger ml-5 py-2 text-center mt-2 mb-2 w-100">login</button>
-        <p class="text-white ml-5"> forget UserName/Password?</p>
-        <p class="mt-5 text-white ml-5"> Create an account <i class="fas fa-long-arrow-alt-right"></i></p>
-      </div>
+            make sure your password is true
+           </div>
+          <button class="btn btn-danger ml-5 py-2 text-center mt-2 mb-2 w-100">login</button>
+          <p class="text-white ml-5 "> forget UserName/Password?</p>
+          <p class="mt-5 text-white ml-5"> Create an account <i class="fas fa-long-arrow-alt-right"></i></p>
+        </div>
+      </form>
     </div>
   </div>
 
